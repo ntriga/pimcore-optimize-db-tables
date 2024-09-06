@@ -1,0 +1,39 @@
+{
+    "name": "ntriga/pimcore-optimize-db-tables",
+    "version": "11.0.0",
+    "description": "Optimize the database tables in messages",
+    "keywords": [
+        "ntriga",
+        "pimcore",
+        "mysql",
+        "optimize"
+    ],
+    "homepage": "https://github.com/ntriga/pimcore-optimize-db-tables",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vincent Bibauw",
+            "email": "vincent@ntriga.agency",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "pimcore/pimcore": "^10.0|^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ntriga\\OptimizeDbTables\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true,
+            "php-http/discovery": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

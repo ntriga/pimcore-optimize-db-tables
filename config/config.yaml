@@ -1,0 +1,12 @@
+framework:
+    messenger:
+        transports:
+            ntriga_optimize_db_table:
+                dsn: 'doctrine://default?queue_name=ntriga_optimize_db_table'
+                retry_strategy:
+                    max_retries: 5
+                    delay: 10000
+                    multiplier: 3
+        routing:
+            'Ntriga\OptimizeDbTables\Message\OptimizeTableMessage': ntriga_optimize_db_table
+

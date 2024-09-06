@@ -1,0 +1,17 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+
+    # ---------------------------------------------------------
+    # Commands
+    # ---------------------------------------------------------
+    Ntriga\OptimizeDbTables\Command\:
+        resource: '../src/Command/*'
+        tags: [ 'console.command' ]
+
+    # ---------------------------------------------------------
+    # Message Handlers
+    # ---------------------------------------------------------
+    Ntriga\OptimizeDbTables\MessageHandler\OptimizeTableMessageHandler: ~
