@@ -18,7 +18,7 @@ class OptimizeTableMessageHandler
     {
         dump('Optimizing table: ' . $message->getTable());
 
-        $pdo = $this->connection->getWrappedConnection();
+        $pdo = $this->connection->getNativeConnection();
         $pdo->setAttribute(PDO::MYSQL_ATTR_USE_BUFFERED_QUERY, true);
         $stmt = $pdo->prepare('OPTIMIZE TABLE ' . $message->getTable());
         $stmt->execute();

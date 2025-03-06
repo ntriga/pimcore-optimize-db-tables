@@ -1,6 +1,6 @@
 {
     "name": "ntriga/pimcore-optimize-db-tables",
-    "version": "11.0.0",
+    "version": "11.0.1",
     "description": "Optimize the database tables in messages",
     "keywords": [
         "ntriga",
